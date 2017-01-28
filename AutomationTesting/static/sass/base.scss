@@ -1,6 +1,5 @@
 @import "_variables";
 @import "_mixins";
-@import "ut_table";
 
 * {
 	box-sizing: border-box;
@@ -12,12 +11,22 @@
 	@include margin-all($ut-container-margin-top, $ut-container-margin-right, $ut-container-margin-bottom, $ut-container-margin-left);
 }
 
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
 .panel {
 	
 }
 
+.panel .panel-cell {
+	float: left;
+	padding: 10px 10px;
+}
+
 .panel .panel-header {
-	height: $ut-panel-header-height;
 	@include background-color($ut-panel-header-background-color);
 	@include border-all($ut-panel-header-border-width, $ut-panel-header-border-style, $ut-panel-header-border-color);
 	@include cursor($ut-panel-header-cursor);
