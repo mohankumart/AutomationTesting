@@ -1,10 +1,6 @@
 @import "_variables";
 @import "_mixins";
-
-* {
-	box-sizing: border-box;
-	margin: $ut-margin-all;	
-}
+@import "_reset";
 
 .container {
 	width: $ut-container-width;	
@@ -17,35 +13,49 @@
   clear: both;
 }
 
-.panel {
-	
+/*ut panel conatiner - start*/
+.ut-panel-container {
+	background-color: rgba(229, 249, 255, 0.21);
+	@include padding-all(10px, 10px, 10px, 10px);
 }
+/*ut panel container - end*/
 
-.panel .panel-cell {
-	float: left;
-	padding: 10px 10px;
+/*ut panel header styles - start*/
+.ut-panel-header {
+	> .ut-panel-row {
+		> .ut-panel-cell {
+			float: left;
+			@include padding-all(10px, 10px, 10px, 10px);
+			font-size: 0.9375em;
+		}
+	} 
 }
+/*ut panel header styles - end*/
 
-.panel .panel-header {
-	@include background-color($ut-panel-header-background-color);
-	@include border-all($ut-panel-header-border-width, $ut-panel-header-border-style, $ut-panel-header-border-color);
-	@include cursor($ut-panel-header-cursor);
+/*ut panels body styles - start*/
+.ut-panel-body {
+	margin-bottom: 10px;
+	> .ut-panel-row {
+		@include cursor($ut-panel-header-cursor);
+		> .ut-panel-cell {
+			float: left;
+			@include padding-all(10px, 10px, 10px, 10px);
+			font-size: 0.875em;
+		}
+	} 
 }
+/*ut panels body styles -end*/
 
-.panel .panel-body {
-	@include border-direction(left,$ut-panel-body-border-width, $ut-panel-body-border-style, $ut-panel-body-border-color);
-	@include border-direction(right,$ut-panel-body-border-width, $ut-panel-body-border-style, $ut-panel-body-border-color);
-	@include border-direction(bottom,$ut-panel-body-border-width, $ut-panel-body-border-style, $ut-panel-body-border-color);
-}
-
-.panelSlideUp {
-    transition: .5s linear all;
+/*ut panels expand body styles - start*/
+.ut-panel-expand-body {
+	transition: .5s linear all;
     height: 200px;
     overflow: hidden;
+    @include padding-all(10px, 10px, 10px, 10px);
 }
 
-.panelSlideUp.ng-hide {
+.ut-panel-expand-body.ng-hide {
     height:0;
 }
 
-
+/*ut panels expand body styles - end*/

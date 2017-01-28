@@ -25,6 +25,13 @@
   margin: $margin;
 }
 
+@mixin padding-all($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
 @mixin cursor($cursor,$important:null) {
 	cursor: $cursor $important; 	
 }
