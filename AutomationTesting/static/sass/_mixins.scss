@@ -1,0 +1,26 @@
+//mixins fot the project
+
+@mixin background-color($color,$important: null) {
+	background-color: $color $important;
+}
+
+@mixin border-all($width, $type, $color) {
+  border-width: $width;
+  border-style: $type;
+  border-color: $color;
+}
+
+@mixin border-direction($direction,$width, $type, $color) {
+	border-#{$direction}: $width $type $color; 
+}
+
+@mixin margin-all($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+@mixin margin($margin) {
+  margin: $margin;
+}

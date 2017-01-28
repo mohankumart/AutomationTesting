@@ -1,0 +1,48 @@
+/**************************
+* reset style variables   *
+***************************/
+/******************************
+* container style variables   *
+*******************************/
+/**************************
+* panel style variables   *
+**************************/
+/*ut panel header styles*/
+/*ut panel body styles*/
+body {
+  margin: 0px;
+}
+
+.container {
+  width: 80%;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+
+.panel .panel-header {
+  height: 20px;
+  background-color: #9e9e9e;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+}
+
+.panel .panel-body {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.panelSlideUp {
+  transition: .5s linear all;
+  height: 200px;
+  overflow: hidden;
+}
+
+.panelSlideUp.ng-hide {
+  height: 0;
+}
+
+/*# sourceMappingURL=base.css.map */

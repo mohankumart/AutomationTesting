@@ -1,0 +1,40 @@
+@import "_variables";
+@import "_mixins";
+
+
+body {
+	margin: $ut-body-margin-all;
+}
+
+.container {
+	width: $ut-container-width;	
+	@include margin-all($ut-container-margin-top, $ut-container-margin-right, $ut-container-margin-bottom, $ut-container-margin-left);
+}
+
+.panel {
+	
+}
+
+.panel .panel-header {
+	height: $ut-panel-header-height;
+	@include background-color($ut-panel-header-background-color);
+	@include border-all($ut-panel-header-border-width, $ut-panel-header-border-style, $ut-panel-header-border-color);
+}
+
+.panel .panel-body {
+	@include border-direction(left,$ut-panel-body-border-width, $ut-panel-body-border-style, $ut-panel-body-border-color);
+	@include border-direction(right,$ut-panel-body-border-width, $ut-panel-body-border-style, $ut-panel-body-border-color);
+	@include border-direction(bottom,$ut-panel-body-border-width, $ut-panel-body-border-style, $ut-panel-body-border-color);
+}
+
+.panelSlideUp {
+    transition: .5s linear all;
+    height: 200px;
+    overflow: hidden;
+}
+
+.panelSlideUp.ng-hide {
+    height:0;
+}
+
+

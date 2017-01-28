@@ -2,12 +2,15 @@
  * Angular controllers file
  */
 
-var utApp = angular.module("utApp",[]);
+var utApp = angular.module("utApp",["ngAnimate"]);
 
 utApp.controller("utAppCtlr",['$scope', function($scope){
+	$scope.collapse = false;
 	
-	$scope.addNumbers = function(x, y){
-		
+	$scope.testing = "Mohan";
+	
+	$scope.toggleCollapse = function(){
+		$scope.collapse = !$scope.collapse;
 	}
 }]);
 
