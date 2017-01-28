@@ -25,7 +25,7 @@
 	> .ut-panel-row {
 		> .ut-panel-cell {
 			float: left;
-			@include padding-all(10px, 10px, 10px, 10px);
+			@include padding-all(12px, 12px, 12px, 12px);
 			font-size: 0.9375em;
 		}
 	} 
@@ -43,6 +43,31 @@
 			font-size: 0.875em;
 		}
 	} 
+}
+
+.complete {
+	border: solid 2px rgba(16, 146, 39, 0.41);
+	background-image: linear-gradient(to right, rgba(111, 175, 122, 0.18) 0%, #fff 60%);
+}
+
+.accepted {
+	border: solid 2px rgba(16, 146, 39, 0.41);
+	background-image: linear-gradient(to right, rgba(111, 175, 122, 0.18) 0%, #fff 60%);
+}
+
+.rejected {
+	border: solid 2px rgba(206, 32, 32, 0.86);
+	background-image: linear-gradient(to right, rgba(228, 43, 14, 0.18) 0%, #fff 60%);
+}
+
+.running {
+	border: solid 2px rgb(141, 198, 232);
+	background-image: linear-gradient(to right, rgba(229, 249, 255, 0.21) 0%, #fff 60%);
+}
+
+.pending {
+	border: solid 2px rgb(195, 192, 192);
+	background-image: linear-gradient(to right, rgba(175, 175, 175, 0.42) 0%, #fff 60%);
 }
 /*ut panels body styles -end*/
 

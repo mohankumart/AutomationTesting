@@ -62,13 +62,13 @@ directives.directive('utPanel',function(){
 		restrict: 'EA',
 		replace: true,
 		require: '^utPanelSet',
-		template: '<div class="ut-panel-body">'+
+		template: '<div class="ut-panel-body {{data.state}}">'+
 					'<div class="ut-panel-row clearfix">'+
 						'<div class="ut-panel-cell" ng-style="setPanelCellStyles(col, $index)" ng-repeat="col in config" ng-switch="col.map" ng-click="toggleCollapse()">'+
 							'<div ng-switch-when="id">{{data.id}}</div>'+
 							'<div ng-switch-when="owner">{{data.owner}}</div>'+
 							'<div ng-switch-when="timestarted">{{data.timestarted}}</div>'+
-							'<div ng-switch-when="state">{{data.state}}</div>'+
+							'<div ng-switch-when="state">{{data.state|capital}}</div>'+
 							'<div ng-switch-when="metrics">{{data.metrics.status}}</div>'+
 							'<div ng-switch-when="build">{{data.build.status}}</div>'+
 							'<div ng-switch-when="unit_test">{{data.unit_test.status}}</div>'+

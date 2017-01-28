@@ -51,10 +51,10 @@ body {
 /*ut panel header styles - start*/
 .ut-panel-header > .ut-panel-row > .ut-panel-cell {
   float: left;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
   font-size: 0.9375em;
 }
 
@@ -73,6 +73,31 @@ body {
   padding-bottom: 10px;
   padding-left: 10px;
   font-size: 0.875em;
+}
+
+.complete {
+  border: solid 2px rgba(16, 146, 39, 0.41);
+  background-image: linear-gradient(to right, rgba(111, 175, 122, 0.18) 0%, #fff 60%);
+}
+
+.accepted {
+  border: solid 2px rgba(16, 146, 39, 0.41);
+  background-image: linear-gradient(to right, rgba(111, 175, 122, 0.18) 0%, #fff 60%);
+}
+
+.rejected {
+  border: solid 2px rgba(206, 32, 32, 0.86);
+  background-image: linear-gradient(to right, rgba(228, 43, 14, 0.18) 0%, #fff 60%);
+}
+
+.running {
+  border: solid 2px #8dc6e8;
+  background-image: linear-gradient(to right, rgba(229, 249, 255, 0.21) 0%, #fff 60%);
+}
+
+.pending {
+  border: solid 2px #c3c0c0;
+  background-image: linear-gradient(to right, rgba(175, 175, 175, 0.42) 0%, #fff 60%);
 }
 
 /*ut panels body styles -end*/
