@@ -10,17 +10,67 @@ services.factory('getUtPanelDetails',['$http','$q',function($http,$q){
 		                   {
 		                	   'type':'Firewall',	
 		                	   'id':'432460',
-		                	   'status':'accepted',
-		                	   'collapse':false,
-		                	   'data':{}
+		                	   'owner':'jtuck',
+		                	   'state':'accepted',
+		                	   'collapse':true,
+		                	   'timestarted':'4/18/2014 12:12pm',
+		                	   'metrics': {
+		                		   'status': 'nodata',
+		                		   'data':{
+		                			   
+		                		   }
+		                	   },
+		                	   'build': {
+		                		   'status': 'pass',
+		                		   'data': {
+		                			   
+		                		   }
+		                	   },
+		                	   'unit_test': {
+		                		   'status': 'nodata',
+		                		   'data': {
+		                			   
+		                		   }
+		                	   },
+		                	   'functional_test': {
+		                		   'status': 'fail',
+		                		   'data': {
+		                			   
+		                		   }
+		                	   }
 		                   },
 		                   {
 		                	   'type':'Firewall',	
-		                	   'id':'432461',
-		                	   'status':'rejected',
-		                	   'collapse':true,
-		                	   'data':{}
-		                   },
+		                	   'id':'432460',
+		                	   'owner':'jtuck',
+		                	   'state':'accepted',
+		                	   'collapse':false,
+		                	   'timestarted':'4/18/2014 12:12pm',
+		                	   'metrics': {
+		                		   'status': 'nodata',
+		                		   'data':{
+		                			   
+		                		   }
+		                	   },
+		                	   'build': {
+		                		   'status': 'pass',
+		                		   'data': {
+		                			   
+		                		   }
+		                	   },
+		                	   'unit_test': {
+		                		   'status': 'nodata',
+		                		   'data': {
+		                			   
+		                		   }
+		                	   },
+		                	   'functional_test': {
+		                		   'status': 'fail',
+		                		   'data': {
+		                			   
+		                		   }
+		                	   }
+		                   }
 		                   
 		                   ]
 		var delay = $q.defer();

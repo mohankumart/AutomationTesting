@@ -11,6 +11,7 @@ utApp.controller("utAppCtlr",['$scope','getUtPanelDetails', function($scope, get
 	},function(reason){
 		console.log('unable to ut panel details');
 	});
+	$scope.config = utConfig.utPanleConfig;
 }]);
 
 utApp.controller('PasswordController', function PasswordController($scope) {

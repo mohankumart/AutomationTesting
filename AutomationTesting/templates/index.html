@@ -8,10 +8,12 @@
 	</head>
 	<body class="container" ng-controller="utAppCtlr">
 		<!-- UT Panels markup -->
-		<ut-panel-set ng-if="utPanels.length">
-			<ut-panel ng-repeat="panel in utPanels" type="{{panel.type}}" data="panel.data" id="{{panel.id}}" collapse="panel.collapse"></ut-panel>
+		<ut-panel-set ng-if="utPanels.length" config="config">
+			<ut-panel-heading></ut-panel-heading>
+			<ut-panel ng-repeat="panel in utPanels" data="panel" collapse="panel.collapse"></ut-panel>
 		</ut-panel-set>
 		
+		<script src="static/js/utconfig.js"></script>
 		<script src="node_modules/jquery/dist/jquery.js"></script>
 		<script src="node_modules/angular/angular.js"></script>
 		<script src="node_modules/angular-animate/angular-animate.js"></script>

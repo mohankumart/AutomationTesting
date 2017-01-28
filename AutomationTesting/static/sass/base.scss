@@ -1,9 +1,10 @@
 @import "_variables";
 @import "_mixins";
+@import "ut_table";
 
-
-body {
-	margin: $ut-body-margin-all;
+* {
+	box-sizing: border-box;
+	margin: $ut-margin-all;	
 }
 
 .container {

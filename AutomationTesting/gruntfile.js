@@ -9,12 +9,13 @@ module.exports = function (grunt) {
 		      },
 		      files: {                         
 		        'static/css/base.css': 'static/sass/base.scss',
+		        'static/css/ut_table.css': 'static/sass/ut_table.scss',
 		      }
 		    }
 		  },
 		  watch: {
 			sass: {
-			    files: ['static/sass/base.scss'],
+			    files: ['static/sass/base.scss','static/sass/ut_table.scss'],
 			    tasks: ['sass'],
 			    options: {
 			      livereload: true,
