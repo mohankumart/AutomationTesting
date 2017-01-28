@@ -12,6 +12,8 @@ $ut-container-margin-left: auto;
 $ut-container-margin-right: auto;
 $ut-container-margin-bottom: 0px;
 
+/*cursor style*/
+$ut-cursor-pointer: pointer;
 
 /**************************
 * panel style variables   *
@@ -23,6 +25,7 @@ $ut-panel-header-height: 20px;
 $ut-panel-header-border-color: #ccc;
 $ut-panel-header-border-width: 1px;
 $ut-panel-header-border-style: solid;
+$ut-panel-header-cursor: $ut-cursor-pointer;
 
 /*ut panel body styles*/
 $ut-panel-body-border-color: #ccc;
@@ -30,5 +33,7 @@ $ut-panel-body-border-width: 1px;
 $ut-panel-body-border-style: solid;
 $ut-panel-body-height: 200px;
 $ut-panel-body-max-height: 200px;
+
+
 
 

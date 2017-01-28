@@ -24,3 +24,8 @@
 @mixin margin($margin) {
   margin: $margin;
 }
+
+@mixin cursor($cursor,$important:null) {
+	cursor: $cursor $important; 	
+}
+

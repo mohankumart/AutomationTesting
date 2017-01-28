@@ -2,16 +2,15 @@
  * Angular controllers file
  */
 
-var utApp = angular.module("utApp",["ngAnimate"]);
+var utApp = angular.module("utApp",["ngAnimate","utApp.directives","utApp.services"]);
 
-utApp.controller("utAppCtlr",['$scope', function($scope){
-	$scope.collapse = false;
-	
-	$scope.testing = "Mohan";
-	
-	$scope.toggleCollapse = function(){
-		$scope.collapse = !$scope.collapse;
-	}
+utApp.controller("utAppCtlr",['$scope','getUtPanelDetails', function($scope, getUtPanelDetails){
+	var utPanelDetailsPromise = getUtPanelDetails();
+	utPanelDetailsPromise.then(function(result){
+		$scope.utPanels = result;
+	},function(reason){
+		console.log('unable to ut panel details');
+	});
 }]);
 
 utApp.controller('PasswordController', function PasswordController($scope) {
