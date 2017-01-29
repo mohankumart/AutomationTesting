@@ -36,38 +36,51 @@
 .ut-panel-body {
 	margin-bottom: 10px;
 	> .ut-panel-row {
-		@include cursor($ut-panel-header-cursor);
 		> .ut-panel-cell {
 			float: left;
 			@include padding-all(10px, 10px, 10px, 10px);
 			font-size: 0.875em;
+			> div {
+				a.collapse {
+					color: inherit;
+					text-decoration: none;
+				}
+				a.expand {
+					color: blue;
+					text-decoration: underline;
+				}
+				
+			}
+			&:first-child {
+				cursor: pointer;
+			}
 		}
 	} 
-}
-
-.complete {
-	border: solid 2px rgba(16, 146, 39, 0.41);
-	background-image: linear-gradient(to right, rgba(111, 175, 122, 0.18) 0%, #fff 60%);
-}
-
-.accepted {
-	border: solid 2px rgba(16, 146, 39, 0.41);
-	background-image: linear-gradient(to right, rgba(111, 175, 122, 0.18) 0%, #fff 60%);
-}
-
-.rejected {
-	border: solid 2px rgba(206, 32, 32, 0.86);
-	background-image: linear-gradient(to right, rgba(228, 43, 14, 0.18) 0%, #fff 60%);
-}
-
-.running {
-	border: solid 2px rgb(141, 198, 232);
-	background-image: linear-gradient(to right, rgba(229, 249, 255, 0.21) 0%, #fff 60%);
-}
-
-.pending {
-	border: solid 2px rgb(195, 192, 192);
-	background-image: linear-gradient(to right, rgba(175, 175, 175, 0.42) 0%, #fff 60%);
+	&.complete {
+		color: rgb(16, 146, 39);
+		border: solid 2px rgba(16, 146, 39, 0.41);
+		background-image: linear-gradient(to right, rgba(111, 175, 122, 0.18) 0%, #fff 60%);
+	}
+	&.accepted {
+		color: rgb(16, 146, 39);
+		border: solid 2px rgba(16, 146, 39, 0.41);
+		background-image: linear-gradient(to right, rgba(111, 175, 122, 0.18) 0%, #fff 60%);
+	}
+	&.rejected {
+		color: rgb(206, 32, 32);
+		border: solid 2px rgba(206, 32, 32, 0.86);
+		background-image: linear-gradient(to right, rgba(228, 43, 14, 0.18) 0%, #fff 60%);
+	}
+	&.running {
+		color: rgb(141, 198, 232);
+		border: solid 2px rgb(141, 198, 232);
+		background-image: linear-gradient(to right, rgba(229, 249, 255, 0.21) 0%, #fff 60%);
+	}
+	&.pending {
+		color: rgb(195, 192, 192);
+		border: solid 2px rgb(195, 192, 192);
+		background-image: linear-gradient(to right, rgba(175, 175, 175, 0.42) 0%, #fff 60%);
+	}
 }
 /*ut panels body styles -end*/
 
@@ -77,10 +90,72 @@
     height: 200px;
     overflow: hidden;
     @include padding-all(10px, 10px, 10px, 10px);
+    > div {
+    	float: left;
+    	width: 18%;
+    	height: 150px;
+    	margin-right: 2%;
+    	> .ut-panel-expand-body-heading {
+    		@include padding-all(3px, 3px, 3px, 3px);
+    		font-size: 0.875em;
+    		font-style: bold;
+    	}
+    	> div:nth-child(2){
+    		@include padding-all(5px, 5px, 5px, 5px);
+    	}
+    	> div:nth-child(3){
+    		@include padding-all(5px, 5px, 5px, 5px);
+    	}
+    }
+    
+    > .pass {
+   		border: solid 2px rgba(16, 146, 39, 0.41);
+   		background-image: radial-gradient(circle at top left, rgba(139, 175, 111, 0.12) 0%, #fff 60%);
+   	}
+   	> .fail {
+   		border: solid 2px rgba(206, 32, 32, 0.86);
+   		background-image: radial-gradient(circle at top left, rgba(228, 43, 14, 0.12) 0%, #fff 60%);
+   	}
+   	> .nodata {
+   		border: solid 2px #c3c0c0;
+   		background-image: radial-gradient(circle at top left, rgba(175, 175, 175, 0.12) 0%, #fff 60%);
+   	}
+   	> .result {
+   		border: none;
+   	}
 }
 
 .ut-panel-expand-body.ng-hide {
     height:0;
+}
+
+.ut-panel-expand-body-box {
+	float: left;
+	font-size: 0.75em;
+	width: 50%;
+	height: 50px;
+	text-align: center;
+}
+
+.arrow {
+   position: relative; 
+}
+
+.arrow img {
+	width: 60px;
+	height: 35px;	
+}
+
+.arrow div { 
+   position: absolute; 
+   top: 15px; 
+   left: 0px; 
+   width: 100%; 
+}
+
+.arrow div span {   
+   padding: 10px; 
+   color: #fff;
 }
 
 /*ut panels expand body styles - end*/

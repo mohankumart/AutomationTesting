@@ -7,7 +7,7 @@
 	//ut panel column definitions
 	root.utConfig = {};
 	root.utConfig['utPanleConfig'] = [
-	                      {'columnName':'Changelist/Build','map':'id','width': '15%'},
+	                      {'columnName':'Changelist / Build','map':'id','width': '15%'},
 	                      {'columnName':'Owner','map':'owner','width': '15%'},
 	                      {'columnName':'Time Started','map':'timestarted','width': '15%'},
 	                      {'columnName':'State','map':'state','width': '10%'},

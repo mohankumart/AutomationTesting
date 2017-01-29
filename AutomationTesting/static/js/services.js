@@ -12,12 +12,31 @@ services.factory('getUtPanelDetails',['$http','$q',function($http,$q){
 		                	   'id':'Tenrox-R1_1235',
 		                	   'owner':'',
 		                	   'state':'pending',
-		                	   'collapse':false,
+		                	   'collapse':true,
 		                	   'timestarted':'',
 		                	   'metrics': {
 		                		   'status': 'nodata',
 		                		   'data':{
-		                			   
+		                			   'test': {
+		                				   'name': 'Test',
+		                				   'score': 64,
+		                				   'result': 'pass'
+		                			   },
+		                			   'maintainability': {
+		                				   'name': 'Maintainability',
+		                				   'score': 53,
+		                				   'result': 'pass'
+		                			   },
+		                			   'security': {
+		                				   'name': 'Security',
+		                				   'score': 64,
+		                				   'result': 'progress'
+		                			   },
+		                			   'workmainship': {
+		                				   'name': 'Workmanship',
+		                				   'score': 72,
+		                				   'result': 'progress'
+		                			   }
 		                		   }
 		                	   },
 		                	   'build': {
@@ -34,6 +53,11 @@ services.factory('getUtPanelDetails',['$http','$q',function($http,$q){
 		                	   },
 		                	   'functional_test': {
 		                		   'status': 'nodata',
+		                		   'data': {
+		                			   
+		                		   }
+		                	   },
+		                	   'results': {
 		                		   'data': {
 		                			   
 		                		   }
@@ -47,7 +71,7 @@ services.factory('getUtPanelDetails',['$http','$q',function($http,$q){
 		                	   'collapse':true,
 		                	   'timestarted':'4/18/2014 12:12pm',
 		                	   'metrics': {
-		                		   'status': 'progress',
+		                		   'status': 'nodata',
 		                		   'data':{
 		                			   
 		                		   }
@@ -66,6 +90,11 @@ services.factory('getUtPanelDetails',['$http','$q',function($http,$q){
 		                	   },
 		                	   'functional_test': {
 		                		   'status': 'nodata',
+		                		   'data': {
+		                			   
+		                		   }
+		                	   },
+		                	   'results': {
 		                		   'data': {
 		                			   
 		                		   }
@@ -101,6 +130,11 @@ services.factory('getUtPanelDetails',['$http','$q',function($http,$q){
 		                		   'data': {
 		                			   
 		                		   }
+		                	   },
+		                	   'results': {
+		                		   'data': {
+		                			   
+		                		   }
 		                	   }
 		                   },
 		                   {
@@ -108,12 +142,31 @@ services.factory('getUtPanelDetails',['$http','$q',function($http,$q){
 		                	   'id':'Tenrox-R1_1234',
 		                	   'owner':'',
 		                	   'state':'complete',
-		                	   'collapse':true,
+		                	   'collapse':false,
 		                	   'timestarted':'4/17/2014 9:42am',
 		                	   'metrics': {
 		                		   'status': 'pass',
 		                		   'data':{
-		                			   
+		                			   'test': {
+		                				   'name': 'Test',
+		                				   'score': 64,
+		                				   'result': 'pass'
+		                			   },
+		                			   'maintainability': {
+		                				   'name': 'Maintainability',
+		                				   'score': 53,
+		                				   'result': 'pass'
+		                			   },
+		                			   'security': {
+		                				   'name': 'Security',
+		                				   'score': 64,
+		                				   'result': 'progress'
+		                			   },
+		                			   'workmainship': {
+		                				   'name': 'Workmanship',
+		                				   'score': 72,
+		                				   'result': 'progress'
+		                			   }
 		                		   }
 		                	   },
 		                	   'build': {
@@ -130,6 +183,11 @@ services.factory('getUtPanelDetails',['$http','$q',function($http,$q){
 		                	   },
 		                	   'functional_test': {
 		                		   'status': 'pass',
+		                		   'data': {
+		                			   
+		                		   }
+		                	   },
+		                	   'results': {
 		                		   'data': {
 		                			   
 		                		   }
@@ -165,6 +223,11 @@ services.factory('getUtPanelDetails',['$http','$q',function($http,$q){
 		                		   'data': {
 		                			   
 		                		   }
+		                	   },
+		                	   'results': {
+		                		   'data': {
+		                			   
+		                		   }
 		                	   }
 		                   },
 		                   {
@@ -194,6 +257,11 @@ services.factory('getUtPanelDetails',['$http','$q',function($http,$q){
 		                	   },
 		                	   'functional_test': {
 		                		   'status': 'pass',
+		                		   'data': {
+		                			   
+		                		   }
+		                	   },
+		                	   'results': {
 		                		   'data': {
 		                			   
 		                		   }

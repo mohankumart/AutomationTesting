@@ -2,7 +2,8 @@
  * Angular controllers file
  */
 
-var utApp = angular.module("utApp",["ngAnimate","utApp.directives","utApp.services","utApp.filters"]);
+var utApp = angular.module("utApp",["ngAnimate","utApp.directives","utApp.services","utApp.filters","utApp.templates"]);
+angular.module('utApp.templates', ["utPanel.html"]);
 
 utApp.controller("utAppCtlr",['$scope','getUtPanelDetails', function($scope, getUtPanelDetails){
 	var utPanelDetailsPromise = getUtPanelDetails();
