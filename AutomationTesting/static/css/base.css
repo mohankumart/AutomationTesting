@@ -169,6 +169,29 @@ select {
 .ut-panel-normal {
   margin-top: 8px;
 }
+.ut-panel-normal.bar {
+  border: solid 2px grey;
+  margin-top: -1px;
+}
+.ut-panel-normal > .progress {
+  height: 25px;
+  background-color: lightgrey;
+}
+.ut-panel-normal > .progress > .progress-bar {
+  height: 25px;
+  line-height: 25px;
+  background-color: lightgrey;
+}
+.ut-panel-normal > .progress > .progress-bar.pass {
+  background-color: green;
+}
+.ut-panel-normal > .progress > .progress-bar.fail {
+  background-color: red;
+}
+.ut-panel-normal > .progress > .progress-bar.progress {
+  width: 50%;
+  background-color: blue;
+}
 
 /*ut panels body styles -end*/
 /*ut panels expand body styles - start*/

@@ -17,7 +17,11 @@ templates.run(["$templateCache", function($templateCache) {
 					'<div class="ut-panel-normal" ng-switch-when="owner">{{data.owner}}</div>'+
 					'<div class="ut-panel-normal" ng-switch-when="timestarted">{{data.timestarted}}</div>'+
 					'<div class="ut-panel-normal" ng-switch-when="state">{{data.state|capital}}</div>'+
-					'<div class="ut-panel-normal" ng-switch-when="metrics">{{data.metrics.status}}</div>'+
+					'<div class="ut-panel-normal bar" ng-switch-when="metrics">'+
+						'<div class="progress">'+
+							'<div class="progress-bar {{data.metrics.status}}"></div>'+
+						'</div>'+
+					'</div>'+
 					'<div class="ut-panel-normal" ng-switch-when="build">{{data.build.status}}</div>'+
 					'<div class="ut-panel-normal" ng-switch-when="unit_test">{{data.unit_test.status}}</div>'+
 					'<div class="ut-panel-normal" ng-switch-when="functional_test">{{data.functional_test.status}}</div>'+

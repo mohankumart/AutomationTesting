@@ -71,7 +71,7 @@
 	    		                	   'collapse':true,
 	    		                	   'timestarted':'4/18/2014 12:12pm',
 	    		                	   'metrics': {
-	    		                		   'status': 'nodata',
+	    		                		   'status': 'progress',
 	    		                		   'data':{
 	    		                			   
 	    		                		   }
@@ -146,6 +146,7 @@
 	    		                	   'timestarted':'4/17/2014 9:42am',
 	    		                	   'metrics': {
 	    		                		   'status': 'pass',
+	    		                		   'width': '100%',
 	    		                		   'data':{
 	    		                			   'test': {
 	    		                				   'name': 'Test',
