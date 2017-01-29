@@ -41,7 +41,7 @@ templates.run(["$templateCache", function($templateCache) {
 				'</div>'+
 			'</div>'+
 			'<div class="ut-panel-expand-body clearfix" ng-hide="collapse">'+
-				'<div class="metrics {{data.metrics.status}}">'+
+				'<div ng-click="showDialog(\'Metrics\')" class="metrics {{data.metrics.status}}">'+
 					'<div class="ut-panel-expand-body-heading">Metrics</div>'+
 					'<div class="clearfix">'+
 						'<div class="ut-panel-expand-body-box test">'+
@@ -64,7 +64,7 @@ templates.run(["$templateCache", function($templateCache) {
   						'</div>'+
 					'</div>'+
 				'</div>'+
-				'<div class="build {{data.build.status}}">'+
+				'<div ng-click="showDialog(\'Build\')" class="build {{data.build.status}}">'+
 					'<div class="ut-panel-expand-body-heading">Build</div>'+
 					'<div class="clearfix">'+
 						'<div class="ut-panel-expand-body-box debug">'+
@@ -78,7 +78,7 @@ templates.run(["$templateCache", function($templateCache) {
 					'</div>'+
 					'<div class="ut-panel-expand-body-footer"><span>{{data.build.data.date.time}}</span><span>&nbsp;&#45;&nbsp;</span><span>{{data.build.data.date.date}}</span></div>'+
 				'</div>'+
-				'<div class="unit-test {{data.unit_test.status}}">'+
+				'<div ng-click="showDialog(\'Unit Test\')" class="unit-test {{data.unit_test.status}}">'+
 					'<div class="ut-panel-expand-body-heading">Unit Test</div>'+
 					'<div class="clearfix">'+
 						'<div class="ut-panel-expand-body-box pie">'+
@@ -101,7 +101,7 @@ templates.run(["$templateCache", function($templateCache) {
 						'</div>'+
 					'</div>'+
 				'</div>'+
-				'<div class="functional-test {{data.functional_test.status}}">'+
+				'<div ng-click="showDialog(\'Functional Test\')" class="functional-test {{data.functional_test.status}}">'+
 					'<div class="ut-panel-expand-body-heading">Functional Test</div>'+
 					'<div class="clearfix">'+
 						'<div class="ut-panel-expand-body-box pie">'+

@@ -84,6 +84,12 @@ directives.directive('utPanel',function(){
 				
 			}
 
+			$scope.showDialog = function(title){
+				//get ngAppScope scope
+				var utAppScope = angular.element('[ng-controller = utAppCtlr]').scope();
+				utAppScope.triggerModal(title, 'InProgress --- TBD');
+				
+			};
 			
 			utPanelSetCtlr.addPanel($scope);
 		}
