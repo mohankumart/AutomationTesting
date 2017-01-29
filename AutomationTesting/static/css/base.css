@@ -38,6 +38,24 @@ body {
   clear: both;
 }
 
+.left {
+  float: left;
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  background: rgba(33, 150, 243, 0.39);
+  padding: 5px 10px;
+}
+
+select {
+  background: #fff;
+  border: solid 1px rgba(33, 150, 243, 0.39);
+}
+
 /*text over image - <<should be a reusable component>>*/
 .arrow {
   position: relative;
@@ -139,6 +157,19 @@ body {
   background-image: linear-gradient(to right, rgba(175, 175, 175, 0.42) 0%, #fff 60%);
 }
 
+.ut-panel-anchor > div:first-child > img {
+  width: 30px;
+  height: 30px;
+}
+.ut-panel-anchor > div:last-child {
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.ut-panel-normal {
+  margin-top: 8px;
+}
+
 /*ut panels body styles -end*/
 /*ut panels expand body styles - start*/
 .ut-panel-expand-body {
@@ -199,6 +230,34 @@ body {
 }
 .ut-panel-expand-body > .result {
   border: none;
+}
+.ut-panel-expand-body > .results {
+  margin-top: 20px;
+}
+.ut-panel-expand-body > .results > .title {
+  color: #000;
+}
+.ut-panel-expand-body > .results > .status, .ut-panel-expand-body > .results > .message {
+  font-size: 2em;
+}
+.ut-panel-expand-body > .results > .status.pass, .ut-panel-expand-body > .results > .message.pass {
+  color: green;
+}
+.ut-panel-expand-body > .results > .status.fail, .ut-panel-expand-body > .results > .message.fail {
+  color: red;
+}
+.ut-panel-expand-body > .results > div:last-child {
+  color: #000;
+}
+.ut-panel-expand-body > .results > div:last-child > div:first-child {
+  margin-right: 8px;
+}
+.ut-panel-expand-body > .results > div:last-child > div:last-child {
+  margin-left: 8px;
+  margin-top: 5px;
+}
+.ut-panel-expand-body > .results > div:last-child > div:nth-child(2) {
+  margin-top: 5px;
 }
 
 .ut-panel-expand-body.ng-hide {

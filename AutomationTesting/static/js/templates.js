@@ -8,15 +8,20 @@ templates.run(["$templateCache", function($templateCache) {
 		  '<div class="ut-panel-body {{data.state}}">'+
 			'<div class="ut-panel-row clearfix">'+
 				'<div class="ut-panel-cell" ng-style="setPanelCellStyles(col, $index)" ng-repeat="col in config" ng-switch="col.map">'+
-					'<div ng-switch-when="id"><a href ng-class="{\'expand\': !data.collapse,\'collapse\': data.collapse}" ng-click="toggleCollapse()">{{data.id}}</a></div>'+
-					'<div ng-switch-when="owner">{{data.owner}}</div>'+
-					'<div ng-switch-when="timestarted">{{data.timestarted}}</div>'+
-					'<div ng-switch-when="state">{{data.state|capital}}</div>'+
-					'<div ng-switch-when="metrics">{{data.metrics.status}}</div>'+
-					'<div ng-switch-when="build">{{data.build.status}}</div>'+
-					'<div ng-switch-when="unit_test">{{data.unit_test.status}}</div>'+
-					'<div ng-switch-when="functional_test">{{data.functional_test.status}}</div>'+
-					'<ANY ng-switch-default>No Data</ANY>'+
+					'<div class="clearfix ut-panel-anchor" ng-switch-when="id">'+
+						'<div class="left"><img ng-if="data.type == \'Build\'" ng-src="../static/images/build/{{data.state}}.png"/><img ng-if="data.type != \'Build\'" ng-src="../static/images/firewall/{{data.state}}.png"/></div>'+
+						'<div class="left">'+
+							'<a href ng-class="{\'expand\': !data.collapse,\'collapse\': data.collapse}" ng-click="toggleCollapse()">{{data.id}}</a>'+
+						'</div>'+
+					'</div>'+
+					'<div class="ut-panel-normal" ng-switch-when="owner">{{data.owner}}</div>'+
+					'<div class="ut-panel-normal" ng-switch-when="timestarted">{{data.timestarted}}</div>'+
+					'<div class="ut-panel-normal" ng-switch-when="state">{{data.state|capital}}</div>'+
+					'<div class="ut-panel-normal" ng-switch-when="metrics">{{data.metrics.status}}</div>'+
+					'<div class="ut-panel-normal" ng-switch-when="build">{{data.build.status}}</div>'+
+					'<div class="ut-panel-normal" ng-switch-when="unit_test">{{data.unit_test.status}}</div>'+
+					'<div class="ut-panel-normal" ng-switch-when="functional_test">{{data.functional_test.status}}</div>'+
+					'<div class="ut-panel-normal" ng-switch-default>No Data</div>'+
 				'</div>'+
 			'</div>'+
 			'<div class="ut-panel-expand-body clearfix" ng-hide="collapse">'+
@@ -104,6 +109,14 @@ templates.run(["$templateCache", function($templateCache) {
 					'</div>'+
 				'</div>'+
 				'<div class="results">'+
+					'<div class="title center">Result:</div>'+
+					'<div class="message center {{data.results.data.result}}">{{data.results.data.message}}</div>'+
+					'<div class="status center {{data.results.data.result}}">{{data.results.data.status}}</div>'+
+					'<div class="clearfix">'+
+						'<div class="left"><button>{{data.results.data.button}}</button></div>'+
+						'<div ng-if="data.type==\'Build\'" class="left"><span>to:</span></div>'+
+						'<div ng-if="data.type==\'Build\'" class="left"><select><option ng-repeat="option in data.results.data.options">{{option}}</option></select></div>'+
+					'</div>'+
 				'</div>'+
 			'</div>'+
 		  '</div>'

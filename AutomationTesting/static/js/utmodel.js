@@ -8,7 +8,7 @@
 	root.utModel = {};
 	root.utModel['utPanleData'] = [
 	     		                   {
-	    		                	   'type':'Firewall',	
+	    		                	   'type':'Build',	
 	    		                	   'id':'Tenrox-R1_1235',
 	    		                	   'owner':'',
 	    		                	   'state':'pending',
@@ -226,7 +226,11 @@
 	    		                	   },
 	    		                	   'results': {
 	    		                		   'data': {
-	    		                			   
+	    		                			   'result': 'pass',
+	    		                			   'status': 'Complete',
+	    		                			   'button': 'Deploy',
+	    		                			   'message': '',
+	    		                			   'options': ['Production','Stage']   
 	    		                		   }
 	    		                	   }
 	    		                   },

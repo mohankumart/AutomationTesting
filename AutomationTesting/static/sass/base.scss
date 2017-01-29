@@ -12,6 +12,22 @@
   display: table;
   clear: both;
 }
+.left {
+	float: left;
+}
+.center {
+	text-align: center;
+}
+
+button {
+	background: rgba(33, 150, 243, 0.39);
+	padding: 5px 10px;
+}
+
+select {
+	background: #fff;
+	border: solid 1px rgba(33, 150, 243, 0.39);
+}
 
 /*text over image - <<should be a reusable component>>*/
 .arrow {
@@ -113,6 +129,21 @@
 		background-image: linear-gradient(to right, rgba(175, 175, 175, 0.42) 0%, #fff 60%);
 	}
 }
+.ut-panel-anchor{
+	>div:first-child {
+		> img {
+			width: 30px;
+			height: 30px;
+		}
+	}
+	>div:last-child {
+		margin-top: 8px;
+		margin-left: 5px;
+	}
+}
+.ut-panel-normal {
+	margin-top: 8px;
+}
 /*ut panels body styles -end*/
 
 /*ut panels expand body styles - start*/
@@ -160,6 +191,35 @@
    	> .result {
    		border: none;
    	}
+   	> .results {
+		margin-top: 20px;
+		> .title {
+			color: #000;
+		}
+		> .status, > .message {
+			&.pass {
+	   			color: green;
+	   		}
+	   		&.fail {
+	   			color: red;
+	   		}
+			font-size: 2em;
+		}
+		> div:last-child {
+			color: #000;
+			>div:first-child {
+				margin-right: 8px;
+			}
+			>div:last-child {
+				margin-left: 8px;
+				margin-top: 5px;
+			}
+			>div:nth-child(2) {
+				margin-top: 5px;
+			}
+		}
+	}
+
 }
 
 .ut-panel-expand-body.ng-hide {
