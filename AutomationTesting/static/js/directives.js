@@ -90,16 +90,6 @@ directives.directive('utPanel',function(){
 				}
 			}
 			
-			 $scope.drawPie = function(id, data, labels, colors){
-				 console.log('drawpie--->'+id);
-				/*var canvas = document.getElementById(id);
-				var context = canvas.getContext("2d");
-				for (var i = 0; i < data.length; i++) {
-				    drawSegment(canvas, context, i);
-				}*/
-			}
-			
-			
 			$scope.toggleCollapse = function(){
 				if(!$scope.collapse){
 					$scope.collapse = !$scope.collapse;
