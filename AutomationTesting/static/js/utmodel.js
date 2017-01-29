@@ -146,7 +146,6 @@
 	    		                	   'timestarted':'4/17/2014 9:42am',
 	    		                	   'metrics': {
 	    		                		   'status': 'pass',
-	    		                		   'width': '100%',
 	    		                		   'data':{
 	    		                			   'test': {
 	    		                				   'name': 'Test',
