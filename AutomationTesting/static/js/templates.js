@@ -8,10 +8,10 @@ templates.run(["$templateCache", function($templateCache) {
 		  '<div class="ut-panel-body {{data.state}}">'+
 			'<div class="ut-panel-row clearfix">'+
 				'<div class="ut-panel-cell" ng-style="setPanelCellStyles(col, $index)" ng-repeat="col in config" ng-switch="col.map">'+
-					'<div class="clearfix ut-panel-anchor" ng-switch-when="id">'+
+					'<div ng-click="toggleCollapse()" class="clearfix ut-panel-anchor" ng-switch-when="id">'+
 						'<div class="left"><img ng-if="data.type == \'Build\'" ng-src="../static/images/build/{{data.state}}.png"/><img ng-if="data.type != \'Build\'" ng-src="../static/images/firewall/{{data.state}}.png"/></div>'+
 						'<div class="left">'+
-							'<a href ng-class="{\'expand\': !data.collapse,\'collapse\': data.collapse}" ng-click="toggleCollapse()">{{data.id}}</a>'+
+							'<a href ng-class="{\'expand\': !data.collapse,\'collapse\': data.collapse}">{{data.id}}</a>'+
 						'</div>'+
 					'</div>'+
 					'<div class="ut-panel-normal" ng-switch-when="owner">{{data.owner}}</div>'+
@@ -83,7 +83,7 @@ templates.run(["$templateCache", function($templateCache) {
 					'<div class="clearfix">'+
 						'<div class="ut-panel-expand-body-box pie">'+
 							'<div>'+
-								
+								'<canvas-pie id="{{data.id}}" data="data.unit_test.data.pie.data" labels="data.unit_test.data.pie.labels" colors="data.unit_test.data.pie.colors"></canvas-pie>'+
 							'</div>'+
 						'</div>'+
 						'<div class="ut-panel-expand-body-box testspassed">'+
@@ -106,7 +106,7 @@ templates.run(["$templateCache", function($templateCache) {
 					'<div class="clearfix">'+
 						'<div class="ut-panel-expand-body-box pie">'+
 							'<div>'+
-								
+								'<canvas-pie id="{{data.id}}" data="data.functional_test.data.pie.data" labels="data.functional_test.data.pie.labels" colors="data.functional_test.data.pie.colors"></canvas-pie>'+
 							'</div>'+
 						'</div>'+
 						'<div class="ut-panel-expand-body-box testspassed">'+
@@ -129,7 +129,7 @@ templates.run(["$templateCache", function($templateCache) {
 					'<div class="message center {{data.results.data.result}}">{{data.results.data.message}}</div>'+
 					'<div class="status center {{data.results.data.result}}">{{data.results.data.status}}</div>'+
 					'<div class="clearfix">'+
-						'<div ng-class={"left":data.type==\'Build\',"center":data.type!=\'Build\'}><button>{{data.results.data.button}}</button></div>'+
+						'<div ng-class={"left":data.type==\'Build\',"center":data.type!=\'Build\'}><button ng-bind-html="data.results.data.button"></button></div>'+
 						'<div ng-if="data.type==\'Build\'" class="left"><span>to:</span></div>'+
 						'<div ng-if="data.type==\'Build\'" class="left"><select><option ng-repeat="option in data.results.data.options">{{option}}</option></select></div>'+
 					'</div>'+

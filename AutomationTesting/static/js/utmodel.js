@@ -57,10 +57,11 @@
 	    		                	   'unit_test': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   'pie': [
-		    		                			           { key: "One", y: 142 },
-		    		                			           { key: "Two", y: 10 }
-	    		                			           ],
+	    		                			   'pie': {
+	    		                				   'data': [300, 60],
+    		                			           'labels': ["142", "10"],
+    		                			           'colors': ["#FFDAB9", "#E6E6FA"]
+		                			   			},
 	    		                			    'codecovered': {
 	    		                			    	'name': 'Code covered',
 	    		                			    	'values': { 
@@ -77,10 +78,11 @@
 	    		                	   'functional_test': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   'pie': [
-	    		                			           { key: "One", y: 142 },
-	    		                			           { key: "Two", y: 10 }
-	    		                			           ],
+	    		                			   'pie': {
+	    		                				   'data': [240, 120],
+    		                			           'labels': ["4321", "2145"],
+    		                			           'colors': ["#FFDAB9", "#E6E6FA"]
+		                			   			},
 	    		                			    'codecovered': {
 	    		                			    	'name': 'Code covered',
 	    		                			    	'values': { 
@@ -154,10 +156,11 @@
 	    		                	   'unit_test': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   'pie': [
-		    		                			           { key: "One", y: 142 },
-		    		                			           { key: "Two", y: 10 }
-	    		                			           ],
+	    		                			   'pie': {
+	    		                				   'data': [300, 60],
+    		                			           'labels': ["142", "10"],
+    		                			           'colors': ["#FFDAB9", "#E6E6FA"]
+		                			   			},
 	    		                			    'codecovered': {
 	    		                			    	'name': 'Code covered',
 	    		                			    	'values': { 
@@ -174,10 +177,11 @@
 	    		                	   'functional_test': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   'pie': [
-	    		                			           { key: "One", y: 142 },
-	    		                			           { key: "Two", y: 10 }
-	    		                			           ],
+	    		                			   'pie': {
+	    		                				   'data': [240, 120],
+    		                			           'labels': ["4321", "2145"],
+    		                			           'colors': ["#FFDAB9", "#E6E6FA"]
+		                			   			},
 	    		                			    'codecovered': {
 	    		                			    	'name': 'Code covered',
 	    		                			    	'values': { 
@@ -251,10 +255,11 @@
 	    		                	   'unit_test': {
 	    		                		   'status': 'pass',
 	    		                		   'data': {
-	    		                			   'pie': [
-		    		                			           { key: "One", y: 142 },
-		    		                			           { key: "Two", y: 10 }
-	    		                			           ],
+	    		                			   'pie': {
+	    		                				   'data': [300, 60],
+    		                			           'labels': ["142", "10"],
+    		                			           'colors': ["#FFDAB9", "#E6E6FA"]
+		                			   			},
 	    		                			    'codecovered': {
 	    		                			    	'name': 'Code covered',
 	    		                			    	'values': { 
@@ -271,10 +276,11 @@
 	    		                	   'functional_test': {
 	    		                		   'status': 'pass',
 	    		                		   'data': {
-	    		                			   'pie': [
-	    		                			           { key: "One", y: 142 },
-	    		                			           { key: "Two", y: 10 }
-	    		                			           ],
+	    		                			   'pie': {
+	    		                				   'data': [240, 120],
+    		                			           'labels': ["4321", "2145"],
+    		                			           'colors': ["#FFDAB9", "#E6E6FA"]
+		                			   			},
 	    		                			    'codecovered': {
 	    		                			    	'name': 'Code covered',
 	    		                			    	'values': { 
@@ -347,10 +353,11 @@
 	    		                	   'unit_test': {
 	    		                		   'status': 'pass',
 	    		                		   'data': {
-	    		                			   'pie': [
-		    		                			           { key: "One", y: 142 },
-		    		                			           { key: "Two", y: 10 }
-	    		                			           ],
+	    		                			   'pie': {
+	    		                			           'data': [300, 60],
+	    		                			           'labels': ["142", "10"],
+	    		                			           'colors': ["#FFDAB9", "#E6E6FA"]
+	    		                			   		},
 	    		                			    'codecovered': {
 	    		                			    	'name': 'Code covered',
 	    		                			    	'values': { 
@@ -367,10 +374,11 @@
 	    		                	   'functional_test': {
 	    		                		   'status': 'pass',
 	    		                		   'data': {
-	    		                			   'pie': [
-	    		                			           { key: "One", y: 142 },
-	    		                			           { key: "Two", y: 10 }
-	    		                			           ],
+	    		                			   'pie': {
+    		                			           'data': [240, 120],
+    		                			           'labels': ["4321", "2145"],
+    		                			           'colors': ["#FFDAB9", "#E6E6FA"]
+		                			   			},
 	    		                			    'codecovered': {
 	    		                			    	'name': 'Code covered',
 	    		                			    	'values': { 
@@ -444,10 +452,11 @@
 	    		                	   'unit_test': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   'pie': [
-		    		                			           { key: "One", y: 142 },
-		    		                			           { key: "Two", y: 10 }
-	    		                			           ],
+	    		                			   'pie': {
+	    		                				   'data': [300, 60],
+    		                			           'labels': ["142", "10"],
+    		                			           'colors': ["#FFDAB9", "#E6E6FA"]
+		                			   			},
 	    		                			    'codecovered': {
 	    		                			    	'name': 'Code covered',
 	    		                			    	'values': { 
@@ -464,10 +473,11 @@
 	    		                	   'functional_test': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   'pie': [
-	    		                			           { key: "One", y: 142 },
-	    		                			           { key: "Two", y: 10 }
-	    		                			           ],
+	    		                			   'pie': {
+	    		                				   'data': [240, 120],
+    		                			           'labels': ["4321", "2145"],
+    		                			           'colors': ["#FFDAB9", "#E6E6FA"]
+		                			   			},
 	    		                			    'codecovered': {
 	    		                			    	'name': 'Code covered',
 	    		                			    	'values': { 
@@ -540,10 +550,11 @@
 	    		                	   'unit_test': {
 	    		                		   'status': 'pass',
 	    		                		   'data': {
-	    		                			   'pie': [
-		    		                			           { key: "One", y: 142 },
-		    		                			           { key: "Two", y: 10 }
-	    		                			           ],
+	    		                			   'pie': {
+	    		                				   'data': [300, 60],
+    		                			           'labels': ["142", "10"],
+    		                			           'colors': ["#FFDAB9", "#E6E6FA"]
+		                			   			},
 	    		                			    'codecovered': {
 	    		                			    	'name': 'Code covered',
 	    		                			    	'values': { 
@@ -560,10 +571,11 @@
 	    		                	   'functional_test': {
 	    		                		   'status': 'pass',
 	    		                		   'data': {
-	    		                			   'pie': [
-	    		                			           { key: "One", y: 142 },
-	    		                			           { key: "Two", y: 10 }
-	    		                			           ],
+	    		                			   'pie': {
+	    		                				   'data': [240, 120],
+    		                			           'labels': ["4321", "2145"],
+    		                			           'colors': ["#FFDAB9", "#E6E6FA"]
+		                			   			},
 	    		                			    'codecovered': {
 	    		                			    	'name': 'Code covered',
 	    		                			    	'values': { 
@@ -581,7 +593,7 @@
 	    		                		   'data': {
 	    		                			   'result': 'progress',
 	    		                			   'status': 'Auto-Merged',
-	    		                			   'button': 'Merged Build',
+	    		                			   'button': '&#9740;&nbsp;&nbsp;Merged Build',
 	    		                			   'message': 'Change Accepted'
 	    		                		   }
 	    		                	   }

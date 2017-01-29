@@ -11,6 +11,27 @@ directives.directive('aGreatEye', function () {
     };
 });
 
+directives.directive('canvasPie',function(){
+	return {
+		restrict: 'EA',
+	    replace: true,
+	    scope: {
+	    	data: '=',
+	    	labels: '=',
+	    	colors: '=',
+	    	id: '@'
+	    },
+	    template: '<canvas width="70" height="70"></canvas>',
+		link: function($scope,element,attrs){
+			$scope.context = element[0].getContext("2d");
+			for (var i = 0; i < $scope.data.length; i++) {
+			    drawSegment(element[0], $scope.context, i, $scope.data, $scope.labels, $scope.colors);
+			}
+			
+		}
+	}
+});
+
 directives.directive('utPanelSet',function(){
 	return {
 		restrict: 'EA',
@@ -68,6 +89,16 @@ directives.directive('utPanel',function(){
 					width: col.width
 				}
 			}
+			
+			 $scope.drawPie = function(id, data, labels, colors){
+				 console.log('drawpie--->'+id);
+				/*var canvas = document.getElementById(id);
+				var context = canvas.getContext("2d");
+				for (var i = 0; i < data.length; i++) {
+				    drawSegment(canvas, context, i);
+				}*/
+			}
+			
 			
 			$scope.toggleCollapse = function(){
 				if(!$scope.collapse){
