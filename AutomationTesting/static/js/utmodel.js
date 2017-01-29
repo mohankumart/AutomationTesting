@@ -42,29 +42,70 @@
 	    		                	   'build': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'debug': {
+	    		                				   'name': 'Debug',
+	    		                			   },
+	    		                			   'release': {
+	    		                				   'name': 'Release'
+	    		                			   },
+	    		                			   'date': {
+	    		                				   'date': '4/17/2014',
+	    		                				   'time': '10:46am'
+	    		                			   }
 	    		                		   }
 	    		                	   },
 	    		                	   'unit_test': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'pie': [
+		    		                			           { key: "One", y: 142 },
+		    		                			           { key: "Two", y: 10 }
+	    		                			           ],
+	    		                			    'codecovered': {
+	    		                			    	'name': 'Code covered',
+	    		                			    	'values': { 
+	    		                			    		'result': "76%"
+	    		                			    	},
+	    		                			    	'result': 'pass'
+	    		                			    },
+	    		                			    'testspassed': {
+	    		                			    	'name': 'tests passed',
+	    		                			    	'result': '73%'
+	    		                			    }
 	    		                		   }
 	    		                	   },
 	    		                	   'functional_test': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'pie': [
+	    		                			           { key: "One", y: 142 },
+	    		                			           { key: "Two", y: 10 }
+	    		                			           ],
+	    		                			    'codecovered': {
+	    		                			    	'name': 'Code covered',
+	    		                			    	'values': { 
+	    		                			    		'result': "23%"
+	    		                			    	},
+	    		                			    	'result': 'fail'
+	    		                			    },
+	    		                			    'testspassed': {
+	    		                			    	'name': 'tests passed',
+	    		                			    	'result': '68%'
+	    		                			    }
 	    		                		   }
 	    		                	   },
 	    		                	   'results': {
 	    		                		   'data': {
-	    		                			   
+	    		                			   'result': 'progress',
+	    		                			   'status': 'Pending',
+	    		                			   'button': 'Deploy',
+	    		                			   'message': '',
+	    		                			   'options': ['Production','Stage']   
 	    		                		   }
 	    		                	   }
 	    		                   },
 	    		                   {
-	    		                	   'type':'Build',	
+	    		                	   'type':'Firewall',	
 	    		                	   'id':'432462',
 	    		                	   'owner':'jtuck',
 	    		                	   'state':'running',
@@ -73,30 +114,90 @@
 	    		                	   'metrics': {
 	    		                		   'status': 'progress',
 	    		                		   'data':{
-	    		                			   
+	    		                			   'test': {
+	    		                				   'name': 'Test',
+	    		                				   'score': 64,
+	    		                				   'result': 'pass'
+	    		                			   },
+	    		                			   'maintainability': {
+	    		                				   'name': 'Maintainability',
+	    		                				   'score': 53,
+	    		                				   'result': 'pass'
+	    		                			   },
+	    		                			   'security': {
+	    		                				   'name': 'Security',
+	    		                				   'score': 64,
+	    		                				   'result': 'progress'
+	    		                			   },
+	    		                			   'workmainship': {
+	    		                				   'name': 'Workmanship',
+	    		                				   'score': 72,
+	    		                				   'result': 'progress'
+	    		                			   }
 	    		                		   }
 	    		                	   },
 	    		                	   'build': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'debug': {
+	    		                				   'name': 'Debug',
+	    		                			   },
+	    		                			   'release': {
+	    		                				   'name': 'Release'
+	    		                			   },
+	    		                			   'date': {
+	    		                				   'date': '4/17/2014',
+	    		                				   'time': '10:46am'
+	    		                			   }
 	    		                		   }
 	    		                	   },
 	    		                	   'unit_test': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'pie': [
+		    		                			           { key: "One", y: 142 },
+		    		                			           { key: "Two", y: 10 }
+	    		                			           ],
+	    		                			    'codecovered': {
+	    		                			    	'name': 'Code covered',
+	    		                			    	'values': { 
+	    		                			    		'result': "76%"
+	    		                			    	},
+	    		                			    	'result': 'pass'
+	    		                			    },
+	    		                			    'testspassed': {
+	    		                			    	'name': 'tests passed',
+	    		                			    	'result': '73%'
+	    		                			    }
 	    		                		   }
 	    		                	   },
 	    		                	   'functional_test': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'pie': [
+	    		                			           { key: "One", y: 142 },
+	    		                			           { key: "Two", y: 10 }
+	    		                			           ],
+	    		                			    'codecovered': {
+	    		                			    	'name': 'Code covered',
+	    		                			    	'values': { 
+	    		                			    		'result': "23%"
+	    		                			    	},
+	    		                			    	'result': 'fail'
+	    		                			    },
+	    		                			    'testspassed': {
+	    		                			    	'name': 'tests passed',
+	    		                			    	'result': '68%'
+	    		                			    }
 	    		                		   }
 	    		                	   },
 	    		                	   'results': {
 	    		                		   'data': {
-	    		                			   
+	    		                			   'result': 'progress',
+	    		                			   'status': 'Pending',
+	    		                			   'button': 'Deploy',
+	    		                			   'message': '',
+	    		                			   'options': ['Production','Stage']   
 	    		                		   }
 	    		                	   }
 	    		                   },
@@ -110,30 +211,89 @@
 	    		                	   'metrics': {
 	    		                		   'status': 'fail',
 	    		                		   'data':{
-	    		                			   
+	    		                			   'test': {
+	    		                				   'name': 'Test',
+	    		                				   'score': 64,
+	    		                				   'result': 'pass'
+	    		                			   },
+	    		                			   'maintainability': {
+	    		                				   'name': 'Maintainability',
+	    		                				   'score': 53,
+	    		                				   'result': 'fail'
+	    		                			   },
+	    		                			   'security': {
+	    		                				   'name': 'Security',
+	    		                				   'score': 64,
+	    		                				   'result': 'progress'
+	    		                			   },
+	    		                			   'workmainship': {
+	    		                				   'name': 'Workmanship',
+	    		                				   'score': 72,
+	    		                				   'result': 'progress'
+	    		                			   }
 	    		                		   }
 	    		                	   },
 	    		                	   'build': {
 	    		                		   'status': 'pass',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'debug': {
+	    		                				   'name': 'Debug',
+	    		                			   },
+	    		                			   'release': {
+	    		                				   'name': 'Release'
+	    		                			   },
+	    		                			   'date': {
+	    		                				   'date': '4/17/2014',
+	    		                				   'time': '10:46am'
+	    		                			   }
 	    		                		   }
 	    		                	   },
 	    		                	   'unit_test': {
 	    		                		   'status': 'pass',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'pie': [
+		    		                			           { key: "One", y: 142 },
+		    		                			           { key: "Two", y: 10 }
+	    		                			           ],
+	    		                			    'codecovered': {
+	    		                			    	'name': 'Code covered',
+	    		                			    	'values': { 
+	    		                			    		'result': "76%"
+	    		                			    	},
+	    		                			    	'result': 'pass'
+	    		                			    },
+	    		                			    'testspassed': {
+	    		                			    	'name': 'tests passed',
+	    		                			    	'result': '73%'
+	    		                			    }
 	    		                		   }
 	    		                	   },
 	    		                	   'functional_test': {
 	    		                		   'status': 'pass',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'pie': [
+	    		                			           { key: "One", y: 142 },
+	    		                			           { key: "Two", y: 10 }
+	    		                			           ],
+	    		                			    'codecovered': {
+	    		                			    	'name': 'Code covered',
+	    		                			    	'values': { 
+	    		                			    		'result': "23%"
+	    		                			    	},
+	    		                			    	'result': 'fail'
+	    		                			    },
+	    		                			    'testspassed': {
+	    		                			    	'name': 'tests passed',
+	    		                			    	'result': '68%'
+	    		                			    }
 	    		                		   }
 	    		                	   },
 	    		                	   'results': {
 	    		                		   'data': {
-	    		                			   
+	    		                			   'result': 'fail',
+	    		                			   'status': 'Metrics Reduction',
+	    		                			   'button': 'Find Issues',
+	    		                			   'message': 'Change Rejected' 
 	    		                		   }
 	    		                	   }
 	    		                   },
@@ -150,7 +310,7 @@
 	    		                			   'test': {
 	    		                				   'name': 'Test',
 	    		                				   'score': 64,
-	    		                				   'result': 'fail'
+	    		                				   'result': 'pass'
 	    		                			   },
 	    		                			   'maintainability': {
 	    		                				   'name': 'Maintainability',
@@ -244,30 +404,89 @@
 	    		                	   'metrics': {
 	    		                		   'status': 'fail',
 	    		                		   'data':{
-	    		                			   
+	    		                			   'test': {
+	    		                				   'name': 'Test',
+	    		                				   'score': 64,
+	    		                				   'result': 'pass'
+	    		                			   },
+	    		                			   'maintainability': {
+	    		                				   'name': 'Maintainability',
+	    		                				   'score': 53,
+	    		                				   'result': 'fail'
+	    		                			   },
+	    		                			   'security': {
+	    		                				   'name': 'Security',
+	    		                				   'score': 64,
+	    		                				   'result': 'progress'
+	    		                			   },
+	    		                			   'workmainship': {
+	    		                				   'name': 'Workmanship',
+	    		                				   'score': 72,
+	    		                				   'result': 'progress'
+	    		                			   }
 	    		                		   }
 	    		                	   },
 	    		                	   'build': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'debug': {
+	    		                				   'name': 'Debug',
+	    		                			   },
+	    		                			   'release': {
+	    		                				   'name': 'Release'
+	    		                			   },
+	    		                			   'date': {
+	    		                				   'date': '4/17/2014',
+	    		                				   'time': '10:46am'
+	    		                			   }
 	    		                		   }
 	    		                	   },
 	    		                	   'unit_test': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'pie': [
+		    		                			           { key: "One", y: 142 },
+		    		                			           { key: "Two", y: 10 }
+	    		                			           ],
+	    		                			    'codecovered': {
+	    		                			    	'name': 'Code covered',
+	    		                			    	'values': { 
+	    		                			    		'result': "76%"
+	    		                			    	},
+	    		                			    	'result': 'pass'
+	    		                			    },
+	    		                			    'testspassed': {
+	    		                			    	'name': 'tests passed',
+	    		                			    	'result': '73%'
+	    		                			    }
 	    		                		   }
 	    		                	   },
 	    		                	   'functional_test': {
 	    		                		   'status': 'nodata',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'pie': [
+	    		                			           { key: "One", y: 142 },
+	    		                			           { key: "Two", y: 10 }
+	    		                			           ],
+	    		                			    'codecovered': {
+	    		                			    	'name': 'Code covered',
+	    		                			    	'values': { 
+	    		                			    		'result': "23%"
+	    		                			    	},
+	    		                			    	'result': 'fail'
+	    		                			    },
+	    		                			    'testspassed': {
+	    		                			    	'name': 'tests passed',
+	    		                			    	'result': '68%'
+	    		                			    }
 	    		                		   }
 	    		                	   },
 	    		                	   'results': {
 	    		                		   'data': {
-	    		                			   
+	    		                			   'result': 'fail',
+	    		                			   'status': 'Metrics Reduction',
+	    		                			   'button': 'Find Issues',
+	    		                			   'message': 'Change Rejected' 
 	    		                		   }
 	    		                	   }
 	    		                   },
@@ -281,30 +500,89 @@
 	    		                	   'metrics': {
 	    		                		   'status': 'pass',
 	    		                		   'data':{
-	    		                			   
+	    		                			   'test': {
+	    		                				   'name': 'Test',
+	    		                				   'score': 64,
+	    		                				   'result': 'pass'
+	    		                			   },
+	    		                			   'maintainability': {
+	    		                				   'name': 'Maintainability',
+	    		                				   'score': 53,
+	    		                				   'result': 'pass'
+	    		                			   },
+	    		                			   'security': {
+	    		                				   'name': 'Security',
+	    		                				   'score': 64,
+	    		                				   'result': 'progress'
+	    		                			   },
+	    		                			   'workmainship': {
+	    		                				   'name': 'Workmanship',
+	    		                				   'score': 72,
+	    		                				   'result': 'progress'
+	    		                			   }
 	    		                		   }
 	    		                	   },
 	    		                	   'build': {
 	    		                		   'status': 'pass',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'debug': {
+	    		                				   'name': 'Debug',
+	    		                			   },
+	    		                			   'release': {
+	    		                				   'name': 'Release'
+	    		                			   },
+	    		                			   'date': {
+	    		                				   'date': '4/17/2014',
+	    		                				   'time': '10:46am'
+	    		                			   }
 	    		                		   }
 	    		                	   },
 	    		                	   'unit_test': {
 	    		                		   'status': 'pass',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'pie': [
+		    		                			           { key: "One", y: 142 },
+		    		                			           { key: "Two", y: 10 }
+	    		                			           ],
+	    		                			    'codecovered': {
+	    		                			    	'name': 'Code covered',
+	    		                			    	'values': { 
+	    		                			    		'result': "76%"
+	    		                			    	},
+	    		                			    	'result': 'pass'
+	    		                			    },
+	    		                			    'testspassed': {
+	    		                			    	'name': 'tests passed',
+	    		                			    	'result': '73%'
+	    		                			    }
 	    		                		   }
 	    		                	   },
 	    		                	   'functional_test': {
 	    		                		   'status': 'pass',
 	    		                		   'data': {
-	    		                			   
+	    		                			   'pie': [
+	    		                			           { key: "One", y: 142 },
+	    		                			           { key: "Two", y: 10 }
+	    		                			           ],
+	    		                			    'codecovered': {
+	    		                			    	'name': 'Code covered',
+	    		                			    	'values': { 
+	    		                			    		'result': "23%"
+	    		                			    	},
+	    		                			    	'result': 'fail'
+	    		                			    },
+	    		                			    'testspassed': {
+	    		                			    	'name': 'tests passed',
+	    		                			    	'result': '68%'
+	    		                			    }
 	    		                		   }
 	    		                	   },
 	    		                	   'results': {
 	    		                		   'data': {
-	    		                			   
+	    		                			   'result': 'progress',
+	    		                			   'status': 'Auto-Merged',
+	    		                			   'button': 'Merged Build',
+	    		                			   'message': 'Change Accepted'
 	    		                		   }
 	    		                	   }
 	    		                   }

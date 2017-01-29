@@ -129,7 +129,7 @@ templates.run(["$templateCache", function($templateCache) {
 					'<div class="message center {{data.results.data.result}}">{{data.results.data.message}}</div>'+
 					'<div class="status center {{data.results.data.result}}">{{data.results.data.status}}</div>'+
 					'<div class="clearfix">'+
-						'<div class="left"><button>{{data.results.data.button}}</button></div>'+
+						'<div ng-class={"left":data.type==\'Build\',"center":data.type!=\'Build\'}><button>{{data.results.data.button}}</button></div>'+
 						'<div ng-if="data.type==\'Build\'" class="left"><span>to:</span></div>'+
 						'<div ng-if="data.type==\'Build\'" class="left"><select><option ng-repeat="option in data.results.data.options">{{option}}</option></select></div>'+
 					'</div>'+

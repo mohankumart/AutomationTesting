@@ -24,12 +24,6 @@ utApp.controller("utAppCtlr",['$scope','getUtPanelDetails','$window', function($
 	$scope.modalClose = function(){
 		$scope.modal.hide();
 	}
-	
-	$window.onclick = function(event) {
-	    if (event.target == ($scope.modal)[0]) {
-	    	$scope.modal.hide();
-	    }
-	}
 }]);
 
 utApp.controller('PasswordController', function PasswordController($scope) {

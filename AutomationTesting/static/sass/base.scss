@@ -159,7 +159,7 @@ select {
 				background-color: green;
 			}
 			&.fail {
-				background-color: red;
+				background-color: #ce2020;
 			}
 			&.progress {
 				width: 50%;
@@ -226,14 +226,33 @@ select {
 		> .title {
 			color: #000;
 		}
-		> .status, > .message {
+		> .status {
 			&.pass {
 	   			color: green;
 	   		}
 	   		&.fail {
-	   			color: red;
+	   			color: #ce2020;
 	   		}
-			font-size: 2em;
+	   		&.progress {
+	   			color: #ffc000;
+			    background-color: transparent;
+			    height: auto;
+	   		}
+			font-size: 1.75em;
+		}
+		> .message {
+			&.pass {
+	   			color: green;
+	   		}
+	   		&.fail {
+	   			color: #ce2020;
+	   		}
+	   		&.progress {
+	   			color: #ffc000;
+			    background-color: transparent;
+			    height: auto;
+	   		}
+			font-size: 0.75em;
 		}
 		> div:last-child {
 			color: #000;
@@ -314,7 +333,7 @@ select {
 	    		color: green
 	    	}
 	    	> span.fail {
-	    		color: red;
+	    		color: #ce2020;
 	    	}
 	    }
 	    > div:last-child {

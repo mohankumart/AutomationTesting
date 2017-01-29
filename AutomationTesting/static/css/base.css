@@ -187,7 +187,7 @@ select {
   background-color: green;
 }
 .ut-panel-normal > .progress > .progress-bar.fail {
-  background-color: red;
+  background-color: #ce2020;
 }
 .ut-panel-normal > .progress > .progress-bar.progress {
   width: 50%;
@@ -267,14 +267,33 @@ select {
 .ut-panel-expand-body > .results > .title {
   color: #000;
 }
-.ut-panel-expand-body > .results > .status, .ut-panel-expand-body > .results > .message {
-  font-size: 2em;
+.ut-panel-expand-body > .results > .status {
+  font-size: 1.75em;
 }
-.ut-panel-expand-body > .results > .status.pass, .ut-panel-expand-body > .results > .message.pass {
+.ut-panel-expand-body > .results > .status.pass {
   color: green;
 }
-.ut-panel-expand-body > .results > .status.fail, .ut-panel-expand-body > .results > .message.fail {
-  color: red;
+.ut-panel-expand-body > .results > .status.fail {
+  color: #ce2020;
+}
+.ut-panel-expand-body > .results > .status.progress {
+  color: #ffc000;
+  background-color: transparent;
+  height: auto;
+}
+.ut-panel-expand-body > .results > .message {
+  font-size: 0.75em;
+}
+.ut-panel-expand-body > .results > .message.pass {
+  color: green;
+}
+.ut-panel-expand-body > .results > .message.fail {
+  color: #ce2020;
+}
+.ut-panel-expand-body > .results > .message.progress {
+  color: #ffc000;
+  background-color: transparent;
+  height: auto;
 }
 .ut-panel-expand-body > .results > div:last-child {
   color: #000;
@@ -349,7 +368,7 @@ select {
   color: green;
 }
 .codecovered > div:last-child > div:first-child > span.fail {
-  color: red;
+  color: #ce2020;
 }
 .codecovered > div:last-child > div:last-child {
   color: #000;
