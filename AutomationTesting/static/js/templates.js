@@ -23,22 +23,85 @@ templates.run(["$templateCache", function($templateCache) {
 				'<div class="metrics {{data.metrics.status}}">'+
 					'<div class="ut-panel-expand-body-heading">Metrics</div>'+
 					'<div class="clearfix">'+
-						'<div class="ut-panel-expand-body-box">'+
-							'<div class="arrow"><img src="../static/images/green-up.png" alt=""/><div><span>{{data.metrics.data.test.score}}</span></div></div>'+
+						'<div class="ut-panel-expand-body-box test">'+
+							'<div class="arrow"><img ng-src="../static/images/metrics/{{data.metrics.data.test.result}}.png" alt="{{data.metrics.data.test.score}}"/><div><span>{{data.metrics.data.test.score}}</span></div></div>'+
 							'<div>{{data.metrics.data.test.name}}</div>'+
 						'</div>'+
-						'<div class="ut-panel-expand-body-box">{{data.metrics.data.maintainability.name}}</div>'+
+						'<div class="ut-panel-expand-body-box maintainability">'+
+						'<div class="arrow"><img ng-src="../static/images/metrics/{{data.metrics.data.maintainability.result}}.png" alt="{{data.metrics.data.maintainability.score}}"/><div><span>{{data.metrics.data.maintainability.score}}</span></div></div>'+
+							'<div>{{data.metrics.data.maintainability.name}}</div>'+
+						'</div>'+	
 					'</div>'+
 					'<div class="clearfix">'+
-						'<div class="ut-panel-expand-body-box">{{data.metrics.data.security.name}}</div>'+
-						'<div class="ut-panel-expand-body-box">{{data.metrics.data.workmainship.name}}</div>'+
+						'<div class="ut-panel-expand-body-box security">'+
+							'<div class="arrow"><img ng-src="../static/images/metrics/{{data.metrics.data.security.result}}.png" alt="{{data.metrics.data.security.score}}"/><div><span>{{data.metrics.data.security.score}}</span></div></div>'+
+							'<div>{{data.metrics.data.security.name}}</div>'+
+  						'</div>'+
+						'<div class="ut-panel-expand-body-box workmainship">'+
+							'<div class="arrow"><img ng-src="../static/images/metrics/{{data.metrics.data.workmainship.result}}.png" alt="{{data.metrics.data.workmainship.score}}"/><div><span>{{data.metrics.data.workmainship.score}}</span></div></div>'+
+  							'<div>{{data.metrics.data.workmainship.name}}</div>'+
+  						'</div>'+
 					'</div>'+
 				'</div>'+
 				'<div class="build {{data.build.status}}">'+
+					'<div class="ut-panel-expand-body-heading">Build</div>'+
+					'<div class="clearfix">'+
+						'<div class="ut-panel-expand-body-box debug">'+
+							'<div><img src="../static/images/build/computer.png"/></div>'+
+							'<div>{{data.build.data.debug.name}}</div>'+
+						'</div>'+
+						'<div class="ut-panel-expand-body-box release">'+
+							'<div><img src="../static/images/build/computer.png"/></div>'+
+							'<div>{{data.build.data.release.name}}</div>'+
+						'</div>'+	
+					'</div>'+
+					'<div class="ut-panel-expand-body-footer"><span>{{data.build.data.date.time}}</span><span>&nbsp;&#45;&nbsp;</span><span>{{data.build.data.date.date}}</span></div>'+
 				'</div>'+
 				'<div class="unit-test {{data.unit_test.status}}">'+
+					'<div class="ut-panel-expand-body-heading">Unit Test</div>'+
+					'<div class="clearfix">'+
+						'<div class="ut-panel-expand-body-box pie">'+
+							'<div>'+
+								
+							'</div>'+
+						'</div>'+
+						'<div class="ut-panel-expand-body-box testspassed">'+
+							'<div>{{data.unit_test.data.testspassed.result}}</div>'+
+							'<div>{{data.unit_test.data.testspassed.name}}</div>'+
+						'</div>'+	
+					'</div>'+
+					'<div class="codecovered">'+
+						'<div class="progress">'+
+							'<div class="progress-bar" ng-style="{width: data.unit_test.data.codecovered.values.result}"></div>'+
+						'</div>'+
+						'<div>'+
+							'<div><span class="{{data.unit_test.data.codecovered.result}}">{{data.unit_test.data.codecovered.values.result}}</span></div>'+
+							'<div>{{data.unit_test.data.codecovered.name}}</div>'+
+						'</div>'+
+					'</div>'+
 				'</div>'+
 				'<div class="functional-test {{data.functional_test.status}}">'+
+					'<div class="ut-panel-expand-body-heading">Functional Test</div>'+
+					'<div class="clearfix">'+
+						'<div class="ut-panel-expand-body-box pie">'+
+							'<div>'+
+								
+							'</div>'+
+						'</div>'+
+						'<div class="ut-panel-expand-body-box testspassed">'+
+							'<div>{{data.functional_test.data.testspassed.result}}</div>'+
+							'<div>{{data.functional_test.data.testspassed.name}}</div>'+
+						'</div>'+	
+					'</div>'+
+					'<div class="codecovered">'+
+						'<div class="progress">'+
+							'<div class="progress-bar" ng-style="{width: data.functional_test.data.codecovered.values.result}"></div>'+
+						'</div>'+
+						'<div>'+
+							'<div><span class="{{data.functional_test.data.codecovered.result}}">{{data.functional_test.data.codecovered.values.result}}</span></div>'+
+							'<div>{{data.functional_test.data.codecovered.name}}</div>'+
+						'</div>'+
+					'</div>'+
 				'</div>'+
 				'<div class="results">'+
 				'</div>'+

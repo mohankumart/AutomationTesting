@@ -13,6 +13,37 @@
   clear: both;
 }
 
+/*text over image - <<should be a reusable component>>*/
+.arrow {
+   position: relative; 
+   & img {
+		width: 60px;
+	  	height: 40px;
+   }
+   & div {
+   		position: absolute; 
+   		top: 20px; 
+   		left: 0px; 
+   		width: 100%; 
+		& span {
+			padding: 10px; 
+   			color: #fff;
+		}    
+   } 
+}
+
+/*progress bar styles - start*/
+.progress {
+	height: 35px;
+	background-color: pink;
+}
+
+.progress-bar {
+	background-color: #abe0b0;
+    line-height: 35px;
+    height: 35px;
+}
+
 /*ut panel conatiner - start*/
 .ut-panel-container {
 	background-color: rgba(229, 249, 255, 0.21);
@@ -98,13 +129,19 @@
     	> .ut-panel-expand-body-heading {
     		@include padding-all(3px, 3px, 3px, 3px);
     		font-size: 0.875em;
-    		font-style: bold;
+    		font-weight: bold;
     	}
     	> div:nth-child(2){
     		@include padding-all(5px, 5px, 5px, 5px);
     	}
     	> div:nth-child(3){
     		@include padding-all(5px, 5px, 5px, 5px);
+    	}
+    	> .ut-panel-expand-body-footer {
+    		@include padding-all(3px, 3px, 3px, 3px);
+    		font-size: 0.875em;
+    		color: #000;
+    		text-align: center;
     	}
     }
     
@@ -135,27 +172,65 @@
 	width: 50%;
 	height: 50px;
 	text-align: center;
+	&.security,  &.workmainship {
+		> .arrow img {
+			width: 50px;
+		}
+		> .arrow div {
+			top: 15px;
+			> span {
+				color: #000;
+			}
+		} 
+	}
+	&.debug, &.release {
+		height: 90px;
+		> div:last-child {
+			color: #0000C2;
+			margin-top: 5px;
+		}
+	}
+	&.pie,&.testspassed {
+		height: 70px;
+	}
+	&.testspassed {
+		> div:first-child {
+			margin-top: 15px;
+			font-size: 2.25em;
+		}
+	}
+	> div:last-child {
+		color: #000;
+	}
 }
 
-.arrow {
-   position: relative; 
-}
-
-.arrow img {
-	width: 60px;
-	height: 35px;	
-}
-
-.arrow div { 
-   position: absolute; 
-   top: 15px; 
-   left: 0px; 
-   width: 100%; 
-}
-
-.arrow div span {   
-   padding: 10px; 
-   color: #fff;
+.codecovered {
+	position: relative;
+	> .progress {
+		> .progress-bar {
+			text-align: center;
+			font-size: 0.75em;
+		}
+	}
+	> div:last-child {
+		position: absolute;
+	    top: 15px;
+	    left: 50px;
+	    font-size: 0.6875em;
+	    color: #000;
+	    > div:first-child {
+	    	text-align: center;
+	    	> span.pass {
+	    		color: green
+	    	}
+	    	> span.fail {
+	    		color: red;
+	    	}
+	    }
+	    > div:last-child {
+	    	color: #000;
+	    }
+	}	
 }
 
 /*ut panels expand body styles - end*/

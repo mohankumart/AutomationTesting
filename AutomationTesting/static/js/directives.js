@@ -68,6 +68,7 @@ directives.directive('utPanel',function(){
 					width: col.width
 				}
 			}
+			
 			$scope.toggleCollapse = function(){
 				if(!$scope.collapse){
 					$scope.collapse = !$scope.collapse;
@@ -82,6 +83,8 @@ directives.directive('utPanel',function(){
 				}
 				
 			}
+
+			
 			utPanelSetCtlr.addPanel($scope);
 		}
 	}
